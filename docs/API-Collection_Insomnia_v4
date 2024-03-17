@@ -1,0 +1,237 @@
+{
+  "_type": "export",
+  "__export_format": 4,
+  "__export_date": "2024-03-17T04:44:55.267Z",
+  "__export_source": "insomnia.desktop.app:v2023.5.8",
+  "resources": [
+    {
+      "_id": "req_daac3a01392e4dbdb2513aad1012d70c",
+      "parentId": "fld_6513bd2bee87453dab03bdb323a2853e",
+      "modified": 1710650445703,
+      "created": 1710650168758,
+      "url": "http://localhost:8080/api/amenities",
+      "name": "List All Amenities",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710650445577,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_6513bd2bee87453dab03bdb323a2853e",
+      "parentId": "wrk_faa7b05345794966979e82958ba55e8d",
+      "modified": 1710650440835,
+      "created": 1710650440835,
+      "name": "Amenities",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1710650440835,
+      "_type": "request_group"
+    },
+    {
+      "_id": "wrk_faa7b05345794966979e82958ba55e8d",
+      "parentId": null,
+      "modified": 1710650569346,
+      "created": 1710649603466,
+      "name": "Hotel Management System",
+      "description": "A REST Service to support actions/antities common for a hotel management system.\n\n[Github Repository](https://github.com/amittras-pal/hotel-management)",
+      "scope": "collection",
+      "_type": "workspace"
+    },
+    {
+      "_id": "req_b1ce0e479f8a4abba2ac018378a24849",
+      "parentId": "fld_e4363305265642c294e9556e3b30d807",
+      "modified": 1710650347723,
+      "created": 1710650317022,
+      "url": "http://localhost:8080/api/room-type",
+      "name": "Get All Room Types",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710650021452,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_e4363305265642c294e9556e3b30d807",
+      "parentId": "wrk_faa7b05345794966979e82958ba55e8d",
+      "modified": 1710650458382,
+      "created": 1710649870841,
+      "name": "Room Types",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1710649870842,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_0d071f0f01144b0e9d54992de42f4b25",
+      "parentId": "fld_e4363305265642c294e9556e3b30d807",
+      "modified": 1710649919001,
+      "created": 1710649874146,
+      "url": "http://localhost:8080/api/room-type",
+      "name": "Create new room type",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 0,\n\t\"name\": \"Dorm\",\n\t\"capacity\": 2,\n\t\"ratePerNight\": 650,\n\t\"amenities\": [\n\t\t{\"id\": 2, \"name\": \"Wi-Fi\"}\n\t]\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710649874146,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_fa63238168bd4d2b830914a650a207e6",
+      "parentId": "fld_0610704851db4572a7bcc2522c885592",
+      "modified": 1710649729395,
+      "created": 1710649659450,
+      "url": "http://localhost:8080/api/hotel",
+      "name": "Update Hotel Information",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 2,\n\t\"name\": \"Cormoran Inn [changed]\",\n\t\"address\": \"13, Eastwood Rd., Someplace Nice\",\n\t\"phoneNumbers\": [\"9429429425\", \"8871822617\"],\n\t\"email\": \"contact@cormoran.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710649659450,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "fld_0610704851db4572a7bcc2522c885592",
+      "parentId": "wrk_faa7b05345794966979e82958ba55e8d",
+      "modified": 1710649656155,
+      "created": 1710649656155,
+      "name": "Hotel",
+      "description": "",
+      "environment": {},
+      "environmentPropertyOrder": null,
+      "metaSortKey": -1710649656155,
+      "_type": "request_group"
+    },
+    {
+      "_id": "req_f651d7be4aa742f88c65940a5fbe0053",
+      "parentId": "fld_0610704851db4572a7bcc2522c885592",
+      "modified": 1710649765263,
+      "created": 1710649749237,
+      "url": "http://localhost:8080/api/hotel",
+      "name": "Create Hotel Entity",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"A Second Hotel\",\n\t\"address\": \"13, Eastwood Rd., Someplace Nice\",\n\t\"phoneNumbers\": [\"9429429425\", \"8871822617\"],\n\t\"email\": \"contact@cormoran.com\"\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710648861767.5,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "env_0d89f65508a5474d0c4ff3595205471e3c38535c",
+      "parentId": "wrk_faa7b05345794966979e82958ba55e8d",
+      "modified": 1710649603476,
+      "created": 1710649603476,
+      "name": "Base Environment",
+      "data": {},
+      "dataPropertyOrder": null,
+      "color": null,
+      "isPrivate": false,
+      "metaSortKey": 1710649603476,
+      "_type": "environment"
+    },
+    {
+      "_id": "jar_0d89f65508a5474d0c4ff3595205471e3c38535c",
+      "parentId": "wrk_faa7b05345794966979e82958ba55e8d",
+      "modified": 1710649603484,
+      "created": 1710649603484,
+      "name": "Default Jar",
+      "cookies": [],
+      "_type": "cookie_jar"
+    }
+  ]
+}
