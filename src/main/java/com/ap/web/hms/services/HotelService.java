@@ -1,7 +1,5 @@
 package com.ap.web.hms.services;
 
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +8,7 @@ import com.ap.web.hms.repositories.HotelRepository;
 
 @Service
 public class HotelService {
-	
+
 	@Autowired
 	HotelRepository repo;
 
