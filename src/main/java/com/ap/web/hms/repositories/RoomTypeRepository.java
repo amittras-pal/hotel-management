@@ -10,4 +10,6 @@ public interface RoomTypeRepository extends JpaRepository<RoomType, Long> {
 
     public RoomType findByName(String name);
 
+    public RoomType findById(long id);
+
 }

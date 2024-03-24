@@ -1,7 +1,7 @@
 {
   "_type": "export",
   "__export_format": 4,
-  "__export_date": "2024-03-17T04:44:55.267Z",
+  "__export_date": "2024-03-17T12:25:19.379Z",
   "__export_source": "insomnia.desktop.app:v2023.5.8",
   "resources": [
     {
@@ -97,7 +97,7 @@
     {
       "_id": "req_0d071f0f01144b0e9d54992de42f4b25",
       "parentId": "fld_e4363305265642c294e9556e3b30d807",
-      "modified": 1710649919001,
+      "modified": 1710677548293,
       "created": 1710649874146,
       "url": "http://localhost:8080/api/room-type",
       "name": "Create new room type",
@@ -105,7 +105,7 @@
       "method": "POST",
       "body": {
         "mimeType": "application/json",
-        "text": "{\n\t\"id\": 0,\n\t\"name\": \"Dorm\",\n\t\"capacity\": 2,\n\t\"ratePerNight\": 650,\n\t\"amenities\": [\n\t\t{\"id\": 2, \"name\": \"Wi-Fi\"}\n\t]\n}"
+        "text": "{\n\t\"id\": 0,\n\t\"name\": \"Suite\",\n\t\"capacity\": 3,\n\t\"ratePerNight\": 1350,\n\t\"amenities\": [\n\t\t{\"id\": 2, \"name\": \"Wi-Fi\"},\n\t\t{\"id\": 0, \"name\": \"Wardrobe\"},\n\t\t{\"id\": 0, \"name\": \"Air Conditioning\"}\n\t]\n}"
       },
       "parameters": [],
       "headers": [
@@ -120,6 +120,104 @@
       ],
       "authentication": {},
       "metaSortKey": -1710649874146,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_cd539a24e4364f38abe71b354ee8561f",
+      "parentId": "fld_e4363305265642c294e9556e3b30d807",
+      "modified": 1710677055668,
+      "created": 1710677041994,
+      "url": "http://localhost:8080/api/rooms",
+      "name": "Get All Rooms",
+      "description": "",
+      "method": "GET",
+      "body": {},
+      "parameters": [],
+      "headers": [
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710649874046,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_4000ee8830e44d98b68b5ca5abe392ed",
+      "parentId": "fld_e4363305265642c294e9556e3b30d807",
+      "modified": 1710677587752,
+      "created": 1710677347710,
+      "url": "http://localhost:8080/api/rooms",
+      "name": "Create New Room",
+      "description": "",
+      "method": "POST",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"name\": \"G-102\",\n\t\"speciality\":\"Full wall window looking out to the riverside.\",\n\t\"typeId\": 4\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710649766748,
+      "isPrivate": false,
+      "settingStoreCookies": true,
+      "settingSendCookies": true,
+      "settingDisableRenderRequestBody": false,
+      "settingEncodeUrl": true,
+      "settingRebuildPath": true,
+      "settingFollowRedirects": "global",
+      "_type": "request"
+    },
+    {
+      "_id": "req_834cfc84d1bd45ad9fcdf55f21ea66e2",
+      "parentId": "fld_e4363305265642c294e9556e3b30d807",
+      "modified": 1710678091164,
+      "created": 1710678038402,
+      "url": "http://localhost:8080/api/rooms",
+      "name": "Update Room",
+      "description": "",
+      "method": "PUT",
+      "body": {
+        "mimeType": "application/json",
+        "text": "{\n\t\"id\": 2,\n\t\"name\": \"G-102\",\n\t\"speciality\":\"Standard 2 sharing room.\",\n\t\"typeId\": 1\n}"
+      },
+      "parameters": [],
+      "headers": [
+        {
+          "name": "Content-Type",
+          "value": "application/json"
+        },
+        {
+          "name": "User-Agent",
+          "value": "insomnia/2023.5.8"
+        }
+      ],
+      "authentication": {},
+      "metaSortKey": -1710649713099,
       "isPrivate": false,
       "settingStoreCookies": true,
       "settingSendCookies": true,
